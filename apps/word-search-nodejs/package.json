@@ -1,0 +1,27 @@
+{
+  "name": "@telefonica/word-search-nodejs",
+  "version": "1.0.0",
+  "description": "Word Search nodejs application",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/index.js"
+  },
+  "keywords": [
+    "tefcon",
+    "word",
+    "search",
+    "nodejs"
+  ],
+  "author": "Telefónica",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^18.11.9",
+    "eslint": "^8.27.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.26.0"
+  },
+  "dependencies": {
+    "fastify": "^4.9.2"
+  }
+}

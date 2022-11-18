@@ -10,7 +10,7 @@ module.exports = {
    * @param {object} request Fastify request
    * @returns {object} Result
    */
-  async searchWords(request) {
+  async searchWord(request) {
     const { fileName } = request.params;
     const { word } = request.query || '';
     const text = (await fs.readFile(path.join(FILES_PATH, fileName))).toString('utf-8');

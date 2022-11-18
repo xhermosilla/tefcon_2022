@@ -12,7 +12,7 @@ La prueba trata de realizar una pequeña API REST que expone un único endpoint 
 Ejemplo de uso de la aplicación una vez finalizada:
 
 ```bash
-curl --location --request GET 'http://localhost/files/example.txt/search/words?word=hola'
+curl --location --request GET 'http://localhost/files/example.txt/searchWord?word=hola'
 ```
 
 Respuesta del api:

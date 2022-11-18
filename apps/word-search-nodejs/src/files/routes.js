@@ -1,4 +1,4 @@
-const { searchWords } = require('./views');
+const { searchWord } = require('./views');
 
 /**
  * Files routes.
@@ -9,7 +9,7 @@ async function routes(fastify) {
   /**
    * Search word from file.
    */
-  fastify.get('/files/:fileName/search/words', searchWords);
+  fastify.get('/files/:fileName/searchWord', searchWord);
 }
 
 module.exports = { routes };

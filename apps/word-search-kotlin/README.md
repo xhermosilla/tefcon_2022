@@ -1,7 +1,13 @@
-# Word Search App (java)
+# Word Search App (kotlin)
 
 ## Run
 
 ```bash
-gradle run
+./gradlew run
+```
+
+## Example request
+
+```
+curl http://localhost:3020/files/hobbit.txt/searchWord?word=Bilbo
 ```

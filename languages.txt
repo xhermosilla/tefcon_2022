@@ -1,7 +1,7 @@
 Python:
 - Tipos dinámicos (estáticos con mypy o pyre)
 - Garbage collection
-- object-oriented, procedural (imperative), functional, structured, reflective
+- object-oriented, imperative, functional, structured, reflective
 - Lanzado en 1991
 - Companies using Python: Google, Intel, IBM, NASA, Pixar, Netflix, Facebook, JP Morgan Chase, Spotify, Reddit, Pinterest, and Instagram
 - The language is used for:
@@ -9,6 +9,8 @@ Python:
     Data science 
     App development
 - Puntos fuertes: comunidad grande, prototipos simples
+- Puntos débiles: velocidad, consumo memoria
+- 2M preguntas en stackoverflow.com
 
 Go:
 - Tipos estáticos
@@ -22,16 +24,19 @@ Go:
     Command-line tools
     Artificial intelligence and data science
 - Puntos fuertes: muy rápido, muy escalable
+- Puntos débiles: gestión de errores, dificultad inicial
+- 66K preguntas en stackoverflow.com
 
 Kotlin:
 - Tipos estáticos
 - Garbage collection (JVM)
 - object-oriented, functional, imperative, block structured, declarative, generic, reflective, concurrent
 - Lanzado 2011
-- Apps using Java: Google Play, TrainAway app, School App, and Matchplayer for Android.
 - Apps using Kotlin: Slack, Netflix, Evernote, Basecamp, Blockbuster, Occaz, AYIO, MoveUP.
-- Puntos fuertes: muy rápido, muy escalable
+- Puntos fuertes: compatilibidad java, menos errores, menos código
+- Puntos débiles: comunidad pequeña, no tan maduro como Java
 - 80% of programmers use Kotlin mainly to build Android apps, 31% for back-end applications, and 30% for SDK/libraries
+- 82K preguntas en stackoverflow.com (1.9M para Java)
 
 node.js:
 - Tipos dinámicos (estáticos con typescript)
@@ -45,7 +50,8 @@ node.js:
     Mobile apps 
     Building web servers
 - Puntos fuertes: comunidad grande, prototipos simples, mismo lenguaje front y back
-
+- Puntos débiles: sólo una CPU, gestión de dependencias
+- 450K preguntas en stackoverflow.com (2.5M para JavaScript)
 
 Lenguajes más popupares en 2022:
 

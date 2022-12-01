@@ -1,0 +1,83 @@
+Python:
+- Tipos dinámicos (estáticos con mypy o pyre)
+- Garbage collection
+- object-oriented, procedural (imperative), functional, structured, reflective
+- Lanzado en 1991
+- Companies using Python: Google, Intel, IBM, NASA, Pixar, Netflix, Facebook, JP Morgan Chase, Spotify, Reddit, Pinterest, and Instagram
+- The language is used for:
+    Back end development 
+    Data science 
+    App development
+- Puntos fuertes: comunidad grande, prototipos simples
+
+Go:
+- Tipos estáticos
+- Garbage collection
+- concurrent, imperative, object-oriented
+- Lanzado en 2009
+- Companies: Google, Uber, Twitch, Dailimotion, Sendgrid, Dropbox, SounCloud
+- The language is used for:
+    Cloud-based or Server-side apps 
+    System programming
+    Command-line tools
+    Artificial intelligence and data science
+- Puntos fuertes: muy rápido, muy escalable
+
+Kotlin:
+- Tipos estáticos
+- Garbage collection (JVM)
+- object-oriented, functional, imperative, block structured, declarative, generic, reflective, concurrent
+- Lanzado 2011
+- Apps using Java: Google Play, TrainAway app, School App, and Matchplayer for Android.
+- Apps using Kotlin: Slack, Netflix, Evernote, Basecamp, Blockbuster, Occaz, AYIO, MoveUP.
+- Puntos fuertes: muy rápido, muy escalable
+- 80% of programmers use Kotlin mainly to build Android apps, 31% for back-end applications, and 30% for SDK/libraries
+
+node.js:
+- Tipos dinámicos (estáticos con typescript)
+- Garbage collection
+- event-driven, functional, imperative, procedural, object-oriented
+- Lanzado 2009
+- Companies using: LinkedIn, Netflix, Uber, Trello, PayPal, NASA, eBay, Medium, Groupon, Walmart, Mozilla, GoDaddy
+- Javascript is used for: 
+    Web development
+    Game development
+    Mobile apps 
+    Building web servers
+- Puntos fuertes: comunidad grande, prototipos simples, mismo lenguaje front y back
+
+
+Lenguajes más popupares en 2022:
+
+https://survey.stackoverflow.co/2022/?utm_source=social-share&utm_medium=social&utm_campaign=dev-survey-2022#most-popular-technologies-language-prof
+
+Most popular:
+JavaScript 	67.9%
+HTML/CSS 	54.93%
+SQL 	52.64%
+Python 	43.51%
+TypeScript 	40.08%
+Java 	33.4%
+C# 	29.72%
+Bash/Shell 	29.47%
+PHP 	21.42%
+C++ 	20.17%
+C 	16.7%
+PowerShell 	12.07%
+Go 	11.83%
+Kotlin 	9.92% 
+
+Wanted:
+Rust 	17.6%
+Python 	17.59%
+TypeScript 	17.03%
+Go 	16.41%
+JavaScript 	12.98%
+Kotlin 	8.08%
+C++ 	7.67%
+SQL 	6.51%
+C# 	6.11%
+Java 	5.6% 
+
+Loved/dreaded:
+https://survey.stackoverflow.co/2022/?utm_source=social-share&utm_medium=social&utm_campaign=dev-survey-2022#technology-most-loved-dreaded-and-wanted

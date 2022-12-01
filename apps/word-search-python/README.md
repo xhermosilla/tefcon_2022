@@ -13,3 +13,9 @@ pip install -r requirements.txt
 ```bash
 flask --app flaskr --debug run
 ```
+
+## Example request
+
+```
+curl http://localhost:5000/files/hobbit.txt/searchWord?word=Bilbo
+```

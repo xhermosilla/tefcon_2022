@@ -5,7 +5,7 @@ import java.io.File
 import java.nio.file.Paths
 
 object AppConstants {
-    const val FILES_PATH = "../../assets/files"
+    const val FILES_PATH = "../../../assets/files"
 }
 
 class Views {

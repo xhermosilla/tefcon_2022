@@ -50,5 +50,5 @@ dependencies {
 
 application {
     // Define the main class for the application.
-    mainClass.set("com.telefonica.search.word.AppKt")
+    mainClass.set("com.telefonica.word.search.AppKt")
 }

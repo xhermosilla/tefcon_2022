@@ -1,0 +1,26 @@
+¿Cuál tiene más preguntas en stackoverflow.com?
+*Python/Go/nodej.js/Kotlin
+
+¿Cuál se ha lanzado antes?
+*Python/Go/nodej.js/Kotlin
+
+¿Cuál se ha lanzado más tarde?
+Python/Go/nodej.js/*Kotlin
+
+¿Cuál crees que es más adecuado para hacer un prototipo rápido?
+Python/Go/nodej.js/Kotlin
+
+¿Cuál crees que es más eficiente?
+Python/Go/nodej.js/Kotlin
+
+¿Cuál crees que es más escalable?
+Python/Go/nodej.js/Kotlin
+
+¿Cuál crees que es el más sencillo para empezar?
+Python/Go/nodej.js/Kotlin
+
+¿Cuál crees que es el más complicado para empezar?
+Python/Go/nodej.js/Kotlin
+
+¿Cuál crees que es más adecuado en data science?
+Python/Go/nodej.js/Kotlin

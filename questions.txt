@@ -24,3 +24,9 @@ Python/Go/nodej.js/Kotlin
 
 ¿Cuál crees que es más adecuado en data science?
 Python/Go/nodej.js/Kotlin
+
+Cual crees que ocuparía menos en una imagen docker (o como microservicio)
+
+Cuál crees que consume menos memoria
+
+mas usado según tiobe

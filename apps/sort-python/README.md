@@ -1,4 +1,4 @@
-# Sort (c)
+# Sort (python)
 
 ## Average execution
 

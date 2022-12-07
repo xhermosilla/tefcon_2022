@@ -222,6 +222,8 @@
                 </div>
             </section>
 
+            <!-- TIMES 1000 -->
+
             <section id="cta" class="block block-cta outer">
                 <div class="inner">
                     <div class="has-gradient">
@@ -244,14 +246,165 @@
                         <div class="grid grid-col-1">
                             <div class="grid-item">
                                 <div class="grid-item-inside">
+                                    <h3 class="grid-item-title line-left">Ordenación de 1000 elementos (segundos)</h3>
+
                                     <canvas id="chart-times" style="padding: 30px;"></canvas>
                                     <h3 class="grid-item-title line-left">Detalle</h3>
+
+                                    <pre>
+                                        <code class="language-javascript">
+$ multitime -n 10 ./sort-c/bin/sort-c 1000
+
+            Mean        Std.Dev.    Min         Median      Max
+real        0.007       0.002       0.004       0.008       0.011       
+user        0.005       0.003       0.000       0.004       0.011       
+sys         0.002       0.002       0.000       0.003       0.004
+
+$ multitime -n 10 ./sort-go/bin/sort-go 1000
+
+            Mean        Std.Dev.    Min         Median      Max
+real        0.011       0.007       0.003       0.010       0.030       
+user        0.006       0.003       0.000       0.007       0.011       
+sys         0.004       0.003       0.000       0.005       0.007   
+
+$ multitime -n 10 kotlin -cp sort-kotlin/bin MainKt 1000
+
+            Mean        Std.Dev.    Min         Median      Max
+real        0.205       0.022       0.167       0.209       0.240       
+user        0.144       0.011       0.122       0.144       0.157       
+sys         0.058       0.010       0.041       0.057       0.077    
+
+$ multitime -n 10  node sort-nodejs/src/index.js 1000
+
+real        0.065       0.006       0.053       0.065       0.076       
+user        0.049       0.007       0.033       0.049       0.059       
+sys         0.016       0.005       0.008       0.017       0.025   
+
+$ multitime -n 10 python3 sort-python/src/main.py 1000
+
+            Mean        Std.Dev.    Min         Median      Max
+real        0.147       0.021       0.122       0.141       0.189       
+user        0.136       0.020       0.114       0.129       0.176       
+sys         0.010       0.006       0.000       0.010       0.024   
+                                        </code>
+                                    </pre>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
+
+            <!-- TIMES 10000 -->
+
+            <section id="cta" class="block block-cta outer">
+                <div class="inner">
+                    <div class="block-content">
+                        <div class="grid grid-col-1">
+                            <div class="grid-item">
+                                <div class="grid-item-inside">
+                                    <h3 class="grid-item-title line-left">Ordenación de 10000 elementos (segundos)</h3>
+
+                                    <canvas id="chart-times-10000" style="padding: 30px;"></canvas>
+                                    <h3 class="grid-item-title line-left">Detalle</h3>
+
+                                    <pre>
+                                        <code class="language-javascript">
+$ multitime -n 10 ./sort-c/bin/sort-c 10000
+
+            Mean        Std.Dev.    Min         Median      Max
+real        0.267       0.003       0.264       0.266       0.275       
+user        0.266       0.004       0.260       0.265       0.275       
+sys         0.001       0.002       0.000       0.000       0.004 
+
+$ multitime -n 10 ./sort-go/bin/sort-go 10000
+
+            Mean        Std.Dev.    Min         Median      Max
+real        0.154       0.005       0.148       0.153       0.167       
+user        0.153       0.006       0.148       0.150       0.168       
+sys         0.002       0.002       0.000       0.002       0.004   
+
+$ multitime -n 10 kotlin -cp sort-kotlin/bin MainKt 10000
+
+Mean        Std.Dev.    Min         Median      Max
+real        0.407       0.027       0.371       0.406       0.448       
+user        0.341       0.022       0.314       0.341       0.390       
+sys         0.060       0.019       0.039       0.058       0.092   
+
+$ multitime -n 10  node sort-nodejs/src/index.js 10000
+
+Mean        Std.Dev.    Min         Median      Max
+real        0.355       0.008       0.347       0.351       0.368       
+user        0.340       0.009       0.328       0.339       0.357       
+sys         0.017       0.005       0.008       0.018       0.024  
+
+$ multitime -n 10 python3 sort-python/src/main.py 10000
+
+Mean        Std.Dev.    Min         Median      Max
+real        10.783      0.483       10.306      10.583      11.620      
+user        10.776      0.484       10.297      10.571      11.611      
+sys         0.006       0.005       0.000       0.006       0.016 
+                                        </code>
+                                    </pre>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- TIMES 50000 -->
+
+            <section id="cta" class="block block-cta outer">
+                <div class="inner">
+                    <div class="block-content">
+                        <div class="grid grid-col-1">
+                            <div class="grid-item">
+                                <div class="grid-item-inside">
+                                    <h3 class="grid-item-title line-left">Ordenación de 50000 elementos (segundos)</h3>
+
+                                    <canvas id="chart-times-50000" style="padding: 30px;"></canvas>
+                                    <h3 class="grid-item-title line-left">Detalle</h3>
+
+                                    <pre>
+                                        <code class="language-javascript">
+$ multitime -n 10 ./sort-c/bin/sort-c 50000
+
+            Mean        Std.Dev.    Min         Median      Max
+real        6.732       0.010       6.715       6.736       6.743       
+user        6.730       0.010       6.711       6.731       6.743       
+sys         0.002       0.002       0.000       0.000       0.004     
+
+$ multitime -n 10 ./sort-go/bin/sort-go 50000
+
+Mean        Std.Dev.    Min         Median      Max
+real        4.043       0.127       3.962       3.983       4.364       
+user        4.043       0.127       3.961       3.986       4.364       
+sys         0.005       0.005       0.000       0.004       0.016
+
+$ multitime -n 10 kotlin -cp sort-kotlin/bin MainKt 50000
+
+Mean        Std.Dev.    Min         Median      Max
+real        5.214       0.034       5.170       5.210       5.266       
+user        5.159       0.033       5.121       5.159       5.230       
+sys         0.060       0.006       0.051       0.061       0.069  
+
+$ multitime -n 10  node sort-nodejs/src/index.js 50000
+
+real        8.233       0.039       8.192       8.218       8.316       
+user        8.216       0.041       8.181       8.201       8.309       
+sys         0.018       0.005       0.008       0.018       0.028   
+
+                                        </code>
+                                    </pre>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- MEMORY -->
 
             <section id="cta" class="block block-cta outer">
                 <div class="inner">
@@ -283,6 +436,7 @@
                 </div>
             </section>
 
+            <!-- DOCKER -->
 
             <section id="cta" class="block block-cta outer">
                 <div class="inner">
@@ -380,26 +534,47 @@
 
     <script>
 
-        const labels = ['1000 iterations', '10000 iterations', '50000 iterations'];
-        const ctx = document.getElementById('chart-times');
+        function createBarChart(id, labels, data) {
+            new Chart(document.getElementById(id), {
+                type: 'bar',
+                data: {
+                    labels,
+                    datasets:
+                        Object.keys(data).map(label => ({
+                            label, data: [data[label]], borderWidth: 1
+                        }))
+                },
+                options: {
+                    animation: false,
+                    plugins: { legend: { position: 'right' } }
+                }
+            });
+        }
 
-        new Chart(ctx, {
-            type: 'bar',
-            data: {
-                labels,
-                datasets: [
-                    { label: 'c', data: [35, 43, 432], borderWidth: 1 },
-                    { label: 'go', data: [34, 43, 1], borderWidth: 1 },
-                    { label: 'kotlin', data: [1, 0, 3], borderWidth: 1 },
-                    { label: 'nodejs', data: [34, 43, 4], borderWidth: 1 },
-                    { label: 'python', data: [5, 3, 5], borderWidth: 1 }
-                ]
-            },
-            options: {
-                animation: false,
-                plugins: { legend: { position: 'right' } }
-            }
+        createBarChart('chart-times', ['1000 elementos'], {
+            c: 0.008,
+            go: 0.010,
+            kotlin: 0.209,
+            nodejs: 0.065,
+            python: 0.141
         });
+
+        createBarChart('chart-times-10000', ['10000 elementos'], {
+            c: 0.266,
+            go: 0.153,
+            kotlin: 0.406,
+            nodejs: 0.351,
+            python: 10.583
+        });
+
+        createBarChart('chart-times-50000', ['10000 elementos'], {
+            c: 6.736,
+            go: 3.983,
+            kotlin: 5.210,
+            nodejs: 8.218,
+            // python: 10.583
+        });
+
     </script>
 
 </body>

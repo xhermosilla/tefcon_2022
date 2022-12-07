@@ -4,6 +4,10 @@
 
 kotlinc sort-kotlin/src/main.kt -d sort-kotlin/bin/
 
+## Create jar
+
+kotlinc src/main.kt -include-runtime -d bin/sort-kotlin.jar
+
 ## Run
 
 kotlin -cp sort-kotlin/bin MainKt 10
@@ -31,7 +35,7 @@ real        5.214       0.034       5.170       5.210       5.266
 user        5.159       0.033       5.121       5.159       5.230       
 sys         0.060       0.006       0.051       0.061       0.069  
 
-# Memory
+## Memory
 
 time kotlin -cp sort-kotlin/bin MainKt 50000
 
@@ -43,3 +47,8 @@ total (sum):               0 KB
 max memory:                49 MB
 page faults from disk:     0
 other page faults:         7484
+
+## Docker
+
+REPOSITORY          TAG       IMAGE ID       CREATED          SIZE
+sort-kotlin         latest    7b78064929fe   2 seconds ago    216MB

@@ -27,7 +27,7 @@ real        6.732       0.010       6.715       6.736       6.743
 user        6.730       0.010       6.711       6.731       6.743       
 sys         0.002       0.002       0.000       0.000       0.004       
 
-# Memory
+## Memory
 
 time ./sort-c/bin/sort-c 50000                                    
 
@@ -39,3 +39,9 @@ total (sum):               0 KB
 max memory:                3 MB
 page faults from disk:     0
 other page faults:         209
+
+
+## Docker image
+
+REPOSITORY          TAG       IMAGE ID       CREATED          SIZE
+sort-c              latest    b8fc85660ed2   37 seconds ago   7.09MB

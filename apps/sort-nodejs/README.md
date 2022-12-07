@@ -21,7 +21,7 @@ real        8.233       0.039       8.192       8.218       8.316
 user        8.216       0.041       8.181       8.201       8.309       
 sys         0.018       0.005       0.008       0.018       0.028   
 
-# Memory
+## Memory
 
 time node sort-nodejs/src/index.js 50000
 
@@ -33,3 +33,8 @@ total (sum):               0 KB
 max memory:                42 MB
 page faults from disk:     0
 other page faults:         3852
+
+## Docker
+
+REPOSITORY          TAG       IMAGE ID       CREATED              SIZE
+sort-node           latest    9c2d2335ffc4   21 seconds ago       58.1MB

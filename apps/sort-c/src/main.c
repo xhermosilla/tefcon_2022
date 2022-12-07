@@ -9,12 +9,12 @@ long get_rand()
     return seed;
 }
 
-ulong sort(ulong *array, ulong size)
+unsigned long sort(unsigned long *array, unsigned long size)
 {
-    ulong i;
-    ulong j;
-    ulong aux_elem;
-    ulong iterations = 0;
+    unsigned long i;
+    unsigned long j;
+    unsigned long aux_elem;
+    unsigned long iterations = 0;
 
     for (i = 0; i < size - 1; i++)
     {
@@ -37,9 +37,9 @@ int main(int argc, char *argv[])
 {
     if (argc > 1)
     {
-        ulong size = atoi(argv[1]);
-        ulong table[size];
-        ulong iterations = 0;
+        unsigned long size = atoi(argv[1]);
+        unsigned long table[size];
+        unsigned long iterations = 0;
 
         for (int i = 0; i < size; i++)
         {

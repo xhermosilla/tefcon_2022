@@ -1906,6 +1906,19 @@ textarea:focus {
         max-width: 50%;
     }
 
+    .block-text .grid-item-10:not(:only-child) {
+        -ms-flex: 0 0 10%;
+        flex: 0 0 10%;
+        max-width: 10%;
+        text-align: right;
+    }
+
+    .block-text .grid-item-35:not(:only-child) {
+        -ms-flex: 0 0 35%;
+        flex: 0 0 35%;
+        max-width: 35%;
+    }
+
     .block-body:not(:only-child) {
         text-align: left;
     }

@@ -119,8 +119,26 @@
                             </div>
                         </div>
                     </div>
+
+                    <div class="block-content">
+                        <div class="grid-item" style="text-align: center;">
+                            <div class="note">
+                                <strong>Pregunta 7:</strong>
+                                <p>¿Cuál crees que es el lenguaje más sencillo y amigable para empezar?</p>
+                            </div>
+                        </div>
+
+                        <div class="grid-item" style="text-align: center;">
+                            <div class="note">
+                                <strong>Pregunta 8:</strong>
+                                <p>¿Cuál crees que es el lenguaje más sencillo y amigable para empezar?</p>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </section>
+
 
             <section id="text-img" class="block-text outer">
                 <div class="inner">
@@ -236,6 +254,15 @@
                             </div>
                         </div>
                     </div>
+
+                    <div class="block-content">
+                        <div class="grid-item" style="text-align: center;">
+                            <div class="note">
+                                <strong>Pregunta 9:</strong>
+                                <p>¿Cuál crees que es más rápido en ejecutar un programa con poca carga?</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </section>
 
@@ -296,6 +323,19 @@ sys         0.010       0.006       0.000       0.010       0.024
             </section>
 
             <!-- TIMES 10000 -->
+
+            <section id="cta" class="block block-cta outer">
+                <div class="inner">
+                    <div class="block-content">
+                        <div class="grid-item" style="text-align: center;">
+                            <div class="note">
+                                <strong>Pregunta 9:</strong>
+                                <p>¿Cuál crees que es más rápido en ejecutar un programa con carga media/alta?</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
             <section id="cta" class="block block-cta outer">
                 <div class="inner">
@@ -377,23 +417,31 @@ sys         0.002       0.002       0.000       0.000       0.004
 
 $ multitime -n 10 ./sort-go/bin/sort-go 50000
 
-Mean        Std.Dev.    Min         Median      Max
+            Mean        Std.Dev.    Min         Median      Max
 real        4.043       0.127       3.962       3.983       4.364       
 user        4.043       0.127       3.961       3.986       4.364       
 sys         0.005       0.005       0.000       0.004       0.016
 
 $ multitime -n 10 kotlin -cp sort-kotlin/bin MainKt 50000
 
-Mean        Std.Dev.    Min         Median      Max
+            Mean        Std.Dev.    Min         Median      Max
 real        5.214       0.034       5.170       5.210       5.266       
 user        5.159       0.033       5.121       5.159       5.230       
 sys         0.060       0.006       0.051       0.061       0.069  
 
 $ multitime -n 10  node sort-nodejs/src/index.js 50000
 
+            Mean        Std.Dev.    Min         Median      Max
 real        8.233       0.039       8.192       8.218       8.316       
 user        8.216       0.041       8.181       8.201       8.309       
-sys         0.018       0.005       0.008       0.018       0.028   
+sys         0.018       0.005       0.008       0.018       0.028
+
+$ multitime -n 10 python3 sort-python/src/main.py 50000
+
+            Mean        Std.Dev.    Min         Median      Max
+real        290.574     8.950       278.801     292.435     300.487     
+user        290.542     8.955       278.769     292.387     300.471     
+sys         0.011       0.010       0.000       0.008       0.024   
 
                                         </code>
                                     </pre>
@@ -418,6 +466,16 @@ sys         0.018       0.005       0.008       0.018       0.028
                             </div>
                         </div>
                     </div>
+
+                    <div class="block-content">
+                        <div class="grid-item" style="text-align: center;">
+                            <div class="note">
+                                <strong>Pregunta 10:</strong>
+                                <p>¿Cuál crees que ocupa menos memoria?</p>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </section>
 
@@ -450,6 +508,16 @@ sys         0.018       0.005       0.008       0.018       0.028
                             </div>
                         </div>
                     </div>
+
+                    <div class="block-content">
+                        <div class="grid-item" style="text-align: center;">
+                            <div class="note">
+                                <strong>Pregunta 11:</strong>
+                                <p>¿Cuál crees que ocupa menos espacio usando una imagen docker?</p>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </section>
 
@@ -567,12 +635,12 @@ sys         0.018       0.005       0.008       0.018       0.028
             python: 10.583
         });
 
-        createBarChart('chart-times-50000', ['10000 elementos'], {
+        createBarChart('chart-times-50000', ['50000 elementos'], {
             c: 6.736,
             go: 3.983,
             kotlin: 5.210,
             nodejs: 8.218,
-            // python: 10.583
+            'python (x10)': 29.2435
         });
 
     </script>

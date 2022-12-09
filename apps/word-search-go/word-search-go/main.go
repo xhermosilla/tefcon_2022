@@ -9,5 +9,5 @@ import (
 func main() {
 	router := gin.Default()
 	router.GET("/files/:fileName/searchWord", files.SearchWord)
-	router.Run()
+	router.Run(":3000")
 }

@@ -358,7 +358,7 @@ sys         0.010       0.006       0.000       0.010       0.024
                 </div>
 
                 <div class="block-buttons" style="max-width: 100%;">
-                    <a class="button" onclick="hiddeShow('section-time-10000')">Ver
+                    <a class="button" onclick="hiddeShow('section-time-10000'); hiddeShow('section-time-50000');">Ver
                         información</a>
                 </div>
 
@@ -660,6 +660,14 @@ sort-python         latest    e4129d41ab46      58.8MB
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
     <script>
+        const colors = {
+            c: 'gray',
+            go: '#00ACD7',
+            kotlin: '#F08120',
+            nodejs: '#4CAF50',
+            python: '#FFCA1D',
+            'python (x10)': '#FFCA1D'
+        }
         function hiddeShow(id) {
             var x = document.getElementById(id);
             if (x.style.display === 'none') {
@@ -676,7 +684,7 @@ sort-python         latest    e4129d41ab46      58.8MB
                     labels,
                     datasets:
                         Object.keys(data).map(label => ({
-                            label, data: [data[label]], borderWidth: 1
+                            label, data: [data[label]], borderWidth: 1, backgroundColor: colors[label]
                         }))
                 },
                 options: {
@@ -720,7 +728,7 @@ sort-python         latest    e4129d41ab46      58.8MB
 
         createBarChart('chart-docker', ['MBs'], {
             c: 7.09,
-            go: 20,
+            go: 10.7,
             kotlin: 216,
             nodejs: 58.1,
             python: 58.8

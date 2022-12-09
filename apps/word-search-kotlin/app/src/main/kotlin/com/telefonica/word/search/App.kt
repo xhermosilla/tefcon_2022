@@ -17,7 +17,7 @@ fun main() {
                 gson.toJson(obj)
     }
 
-    val app = Javalin.create { it.jsonMapper(gsonMapper) }.start(3020);
+    val app = Javalin.create { it.jsonMapper(gsonMapper) }.start(3000);
 
     app.get("/files/{fileName}/searchWord") { Views.searchWord(it) }
 }

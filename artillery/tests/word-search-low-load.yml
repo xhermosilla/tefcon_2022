@@ -1,0 +1,15 @@
+config:
+  target: "http://localhost:3000"
+  phases:
+    - duration: 20
+      arrivalRate: 5
+      name: Warm up low load
+scenarios:
+  - name: "Search words 'Bilbo'"
+    flow:
+      - get:
+          url: "/files/hobbit.txt/searchWord?word=Bilbo"
+  - name: "Search words 'of'"
+    flow:
+      - get:
+          url: "/files/hobbit.txt/searchWord?word=and"

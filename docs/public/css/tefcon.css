@@ -759,6 +759,14 @@ textarea:focus {
     width: 5px;
 }
 
+.line-left-ok:after {
+    background: #31c634;
+}
+
+.line-left-error:after {
+    background: #f43939;
+}
+
 .js-reframe {
     margin: 1.875em 0;
 }

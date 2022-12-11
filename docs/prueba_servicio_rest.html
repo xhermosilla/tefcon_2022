@@ -515,15 +515,69 @@ Response time (msec):
                 </div>
             </section>
 
+
             <section id="performance-test-medium" class="block-cta outer" style="display: none;">
                 <div class="inner">
                     <div class="block-content">
+
                         <div class="grid grid-col-1">
                             <div class="grid-item">
                                 <div class="grid-item-inside">
                                     <h3 class="grid-item-title line-left">Tiempo de respuesta medio (ms)</h3>
-
                                     <canvas id="chart-performance-test-medium" style="padding: 30px;"></canvas>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="grid grid-col-2" style="padding-top: 30px">
+                            <div class="grid-item">
+                                <div class="grid-item-inside go"
+                                    style="background-size: 70px; background-image: url('./public/images/golang.png');background-position: top 0px right 10px; background-repeat: no-repeat;">
+                                    <h3 class="grid-item-title line-left">Go</h3>
+
+                                    <div style="text-align:center;">
+                                        <img src="public/reports/medium_golang.png" />
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="grid-item">
+                                <div class="grid-item-inside kotlin"
+                                    style="background-size: 25px; background-image: url('./public/images/kotlin.png');background-position: top 15px right 15px; background-repeat: no-repeat;">
+                                    <h3 class="grid-item-title line-left">Kolin</h3>
+                                    <div style="text-align:center;">
+                                        <img src="public/reports/medium_kotlin.png" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="grid grid-col-2" style="padding-top:30px;">
+                            <div class="grid-item">
+                                <div class="grid-item-inside nodejs"
+                                    style="background-size: 60px; background-image: url('./public/images/nodejs.png');background-position: top 0px right 15px; background-repeat: no-repeat;">
+                                    <h3 class="grid-item-title line-left">Nodejs</h3>
+
+                                    <div style="text-align:center;">
+                                        <img src="public/reports/medium_nodejs.png" />
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="grid-item">
+                                <div class="grid-item-inside python"
+                                    style="background-size: 30px; background-image: url('./public/images/python.png');background-position: top 15px right 20px; background-repeat: no-repeat;">
+                                    <h3 class="grid-item-title line-left">Python</h3>
+                                    <div style="text-align:center;">
+                                        <img src="public/reports/medium_python.png" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="grid grid-col-1" style="padding-top: 30px">
+                            <div class="grid-item">
+                                <div class="grid-item-inside">
                                     <h3 class="grid-item-title line-left">Detalle</h3>
 
                                     <pre>
@@ -567,11 +621,11 @@ Response time (msec):
   median: 2669.5
   p95: 9433.5
   p99: 9790.4
-  Codes:
-      200: 1116
-  Errors:
-      ETIMEDOUT: 1346
-                                            </code>
+Codes:
+  200: 1116
+Errors:
+  ETIMEDOUT: 1346
+                                           </code>
                                         </pre>
                                 </div>
                             </div>
@@ -608,12 +662,56 @@ Response time (msec):
             <section id="performance-test-high" class="block-cta outer" style="display: none;">
                 <div class="inner">
                     <div class="block-content">
-                        <div class="grid grid-col-1">
+
+                        <div class="grid grid-col-2">
+                            <div class="grid-item">
+                                <div class="grid-item-inside go"
+                                    style="background-size: 70px; background-image: url('./public/images/golang.png');background-position: top 0px right 10px; background-repeat: no-repeat;">
+                                    <h3 class="grid-item-title line-left">Go</h3>
+
+                                    <div style="text-align:center;">
+                                        <img src="public/reports/high_golang.png" />
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="grid-item">
+                                <div class="grid-item-inside kotlin"
+                                    style="background-size: 25px; background-image: url('./public/images/kotlin.png');background-position: top 15px right 15px; background-repeat: no-repeat;">
+                                    <h3 class="grid-item-title line-left">Kolin</h3>
+                                    <div style="text-align:center;">
+                                        <img src="public/reports/high_kotlin.png" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="grid grid-col-2" style="padding-top:30px;">
+                            <div class="grid-item">
+                                <div class="grid-item-inside nodejs"
+                                    style="background-size: 60px; background-image: url('./public/images/nodejs.png');background-position: top 0px right 15px; background-repeat: no-repeat;">
+                                    <h3 class="grid-item-title line-left">Nodejs</h3>
+
+                                    <div style="text-align:center;">
+                                        <img src="public/reports/high_nodejs.png" />
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="grid-item">
+                                <div class="grid-item-inside python"
+                                    style="background-size: 30px; background-image: url('./public/images/python.png');background-position: top 15px right 20px; background-repeat: no-repeat;">
+                                    <h3 class="grid-item-title line-left">Python</h3>
+                                    <div style="text-align:center;">
+                                        <img src="public/reports/high_python.png" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="grid grid-col-1" style="padding-top: 30px">
                             <div class="grid-item">
                                 <div class="grid-item-inside">
-                                    <h3 class="grid-item-title line-left">Tiempo de respuesta medio (ms)</h3>
-
-                                    <canvas id="chart-performance-test-high" style="padding: 30px;"></canvas>
                                     <h3 class="grid-item-title line-left">Detalle</h3>
 
                                     <pre>
@@ -756,15 +854,6 @@ Errors:
             'python (x10)': [266]
         });
 
-
-        createBarChart('chart-performance-test-high', [
-            'Total: 110 segs, 40 peticiones/seg (4410 peticiones aprox.)'
-        ], {
-            go: [1662],
-            kotlin: [12],
-            nodejs: [13],
-            python: [0]
-        });
 
     </script>
 

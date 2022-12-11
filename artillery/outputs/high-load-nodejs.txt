@@ -1,0 +1,204 @@
+Started phase 0 (Warm up low load), duration: 20s @ 12:11:22(+0100) 2022-12-10
+Report @ 12:11:32(+0100) 2022-12-10
+Elapsed time: 10 seconds
+  Scenarios launched:  99
+  Scenarios completed: 99
+  Requests completed:  99
+  Mean response/sec: 10.02
+  Response time (msec):
+    min: 15
+    max: 50
+    median: 29
+    p95: 45.6
+    p99: 49.5
+  Codes:
+    200: 99
+
+Report @ 12:11:42(+0100) 2022-12-10
+Elapsed time: 20 seconds
+  Scenarios launched:  100
+  Scenarios completed: 100
+  Requests completed:  100
+  Mean response/sec: 10.01
+  Response time (msec):
+    min: 14
+    max: 48
+    median: 37
+    p95: 44
+    p99: 47
+  Codes:
+    200: 100
+
+Started phase 1 (Ramp up load), duration: 30s @ 12:11:42(+0100) 2022-12-10
+Report @ 12:11:52(+0100) 2022-12-10
+Elapsed time: 30 seconds
+  Scenarios launched:  140
+  Scenarios completed: 140
+  Requests completed:  140
+  Mean response/sec: 14
+  Response time (msec):
+    min: 13
+    max: 49
+    median: 24.5
+    p95: 45.5
+    p99: 49
+  Codes:
+    200: 140
+
+Report @ 12:12:02(+0100) 2022-12-10
+Elapsed time: 40 seconds
+  Scenarios launched:  202
+  Scenarios completed: 202
+  Requests completed:  202
+  Mean response/sec: 20.28
+  Response time (msec):
+    min: 13
+    max: 62
+    median: 19
+    p95: 44
+    p99: 48
+  Codes:
+    200: 202
+
+Report @ 12:12:12(+0100) 2022-12-10
+Elapsed time: 50 seconds
+  Scenarios launched:  270
+  Scenarios completed: 270
+  Requests completed:  270
+  Mean response/sec: 27
+  Response time (msec):
+    min: 13
+    max: 43
+    median: 18
+    p95: 39
+    p99: 41.8
+  Codes:
+    200: 270
+
+Started phase 2 (Sustained load), duration: 60s @ 12:12:12(+0100) 2022-12-10
+Report @ 12:12:22(+0100) 2022-12-10
+Elapsed time: 1 minute, 0 seconds
+  Scenarios launched:  596
+  Scenarios completed: 595
+  Requests completed:  595
+  Mean response/sec: 59.66
+  Response time (msec):
+    min: 11
+    max: 37
+    median: 13
+    p95: 17
+    p99: 25
+  Codes:
+    200: 595
+
+Report @ 12:12:32(+0100) 2022-12-10
+Elapsed time: 1 minute, 10 seconds
+  Scenarios launched:  600
+  Scenarios completed: 600
+  Requests completed:  600
+  Mean response/sec: 60.06
+  Response time (msec):
+    min: 11
+    max: 31
+    median: 12
+    p95: 16
+    p99: 17.5
+  Codes:
+    200: 600
+
+Report @ 12:12:42(+0100) 2022-12-10
+Elapsed time: 1 minute, 20 seconds
+  Scenarios launched:  600
+  Scenarios completed: 600
+  Requests completed:  600
+  Mean response/sec: 60
+  Response time (msec):
+    min: 11
+    max: 26
+    median: 12
+    p95: 16
+    p99: 20.5
+  Codes:
+    200: 600
+
+Report @ 12:12:52(+0100) 2022-12-10
+Elapsed time: 1 minute, 30 seconds
+  Scenarios launched:  600
+  Scenarios completed: 600
+  Requests completed:  600
+  Mean response/sec: 60
+  Response time (msec):
+    min: 11
+    max: 20
+    median: 12
+    p95: 15
+    p99: 17.5
+  Codes:
+    200: 600
+
+Report @ 12:13:02(+0100) 2022-12-10
+Elapsed time: 1 minute, 40 seconds
+  Scenarios launched:  600
+  Scenarios completed: 600
+  Requests completed:  600
+  Mean response/sec: 60
+  Response time (msec):
+    min: 11
+    max: 33
+    median: 12
+    p95: 16
+    p99: 24
+  Codes:
+    200: 600
+
+Report @ 12:13:12(+0100) 2022-12-10
+Elapsed time: 1 minute, 50 seconds
+  Scenarios launched:  600
+  Scenarios completed: 600
+  Requests completed:  600
+  Mean response/sec: 60
+  Response time (msec):
+    min: 11
+    max: 50
+    median: 12
+    p95: 18
+    p99: 39.5
+  Codes:
+    200: 600
+
+Report @ 12:13:13(+0100) 2022-12-10
+Elapsed time: 1 minute, 50 seconds
+  Scenarios launched:  7
+  Scenarios completed: 8
+  Requests completed:  8
+  Mean response/sec: 11.67
+  Response time (msec):
+    min: 12
+    max: 17
+    median: 13.5
+    p95: 17
+    p99: 17
+  Codes:
+    200: 8
+
+All virtual users finished
+Summary report @ 12:13:13(+0100) 2022-12-10
+  Scenarios launched:  4414
+  Scenarios completed: 4414
+  Requests completed:  4414
+  Mean response/sec: 39.93
+  Response time (msec):
+    min: 11
+    max: 62
+    median: 13
+    p95: 35
+    p99: 44
+  Scenario counts:
+    Search words 'in': 1090 (24.694%)
+    Search words 'of': 1122 (25.419%)
+    Search words 'at': 1078 (24.422%)
+    Search words 'Bilbo': 1124 (25.464%)
+  Codes:
+    200: 4414
+
+Log file: artillery/results/high-load-nodejs.json

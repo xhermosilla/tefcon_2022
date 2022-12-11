@@ -1,0 +1,65 @@
+Started phase 0 (Warm up low load), duration: 20s @ 12:03:20(+0100) 2022-12-10
+Report @ 12:03:30(+0100) 2022-12-10
+Elapsed time: 10 seconds
+  Scenarios launched:  49
+  Scenarios completed: 49
+  Requests completed:  49
+  Mean response/sec: 5.02
+  Response time (msec):
+    min: 16
+    max: 167
+    median: 39
+    p95: 61.5
+    p99: 167
+  Codes:
+    200: 49
+
+Report @ 12:03:40(+0100) 2022-12-10
+Elapsed time: 20 seconds
+  Scenarios launched:  50
+  Scenarios completed: 50
+  Requests completed:  50
+  Mean response/sec: 5.01
+  Response time (msec):
+    min: 13
+    max: 46
+    median: 27.5
+    p95: 45
+    p99: 46
+  Codes:
+    200: 50
+
+Report @ 12:03:40(+0100) 2022-12-10
+Elapsed time: 20 seconds
+  Scenarios launched:  1
+  Scenarios completed: 1
+  Requests completed:  1
+  Mean response/sec: 2
+  Response time (msec):
+    min: 41
+    max: 41
+    median: 41
+    p95: 41
+    p99: 41
+  Codes:
+    200: 1
+
+All virtual users finished
+Summary report @ 12:03:40(+0100) 2022-12-10
+  Scenarios launched:  100
+  Scenarios completed: 100
+  Requests completed:  100
+  Mean response/sec: 4.93
+  Response time (msec):
+    min: 13
+    max: 167
+    median: 32
+    p95: 48
+    p99: 119
+  Scenario counts:
+    Search words 'of': 48 (48%)
+    Search words 'Bilbo': 52 (52%)
+  Codes:
+    200: 100
+
+Log file: artillery/results/low-load-kotlin.json

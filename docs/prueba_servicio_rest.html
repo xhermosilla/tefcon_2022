@@ -407,7 +407,273 @@
             </div>
 
 
+            <!-- PERFORMANCE: CARGA BAJA -->
 
+            <section id="cta" class="block block-cta outer">
+                <div class="inner">
+                    <div class="has-gradient">
+                        <div class="grid grid-middle grid-center">
+                            <div class="grid-item block-header" style="text-align: center;">
+                                <h2 class="block-title">Prueba con poca carga</h2>
+                                <p class="block-subtitle">
+                                    Paso 1: <b>20</b> segs, <b>5</b> peticiones/seg, total = <b>100</b> peticiones
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="block-buttons" style="max-width: 100%;">
+                        <a class="button" onclick="hiddeShow('performance-test-low')">Ver
+                            información</a>
+                    </div>
+                </div>
+            </section>
+
+            <section id="performance-test-low" class="block-cta outer" style="display: none;">
+                <div class="inner">
+                    <div class="block-content">
+                        <div class="grid grid-col-1">
+                            <div class="grid-item">
+                                <div class="grid-item-inside">
+                                    <h3 class="grid-item-title line-left">Tiempo de respuesta medio (ms)</h3>
+
+                                    <canvas id="chart-performance-test-low" style="padding: 30px;"></canvas>
+                                    <h3 class="grid-item-title line-left">Detalle</h3>
+
+                                    <pre>
+                                            <code class="language-javascript">
+# Go
+
+Mean response/sec: 4.93
+Response time (msec):
+  min: 61
+  max: 119
+  median: 93
+  p95: 114
+  p99: 118.5
+
+# Kotlin
+
+Mean response/sec: 4.93
+Response time (msec):
+  min: 13
+  max: 167
+  median: 32
+  p95: 48
+  p99: 119
+
+# Node.js
+
+Mean response/sec: 4.93
+Response time (msec):
+  min: 15
+  max: 52
+  median: 42
+  p95: 49.5
+  p99: 51.5
+
+# Python
+
+Mean response/sec: 4.93
+Response time (msec):
+  min: 34
+  max: 76
+  median: 50
+  p95: 69
+  p99: 73
+                                            </code>
+                                        </pre>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- PERFORMANCE: CARGA MEDIA -->
+
+            <section id="cta" class="block block-cta outer">
+                <div class="inner">
+                    <div class="has-gradient">
+                        <div class="grid grid-middle grid-center">
+                            <div class="grid-item block-header" style="text-align: center;">
+                                <h2 class="block-title">Prueba con carga media</h2>
+                                <p class="block-subtitle">
+                                    Paso 1: <b>20</b> segs, <b>5</b> peticiones/seg<br>
+                                    Paso 2: <b>20</b> segs, <b>5 hasta 20</b> peticiones/seg<br>
+                                    Paso 3: <b>60</b> segs, <b>35</b> peticiones/seg<br>
+                                    Total: <b>100</b> segs, <b>24.6</b> peticiones/seg (2460 peticiones aprox.)<br>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="block-buttons" style="max-width: 100%;">
+                        <a class="button" onclick="hiddeShow('performance-test-medium')">Ver
+                            información</a>
+                    </div>
+                </div>
+            </section>
+
+            <section id="performance-test-medium" class="block-cta outer" style="display: none;">
+                <div class="inner">
+                    <div class="block-content">
+                        <div class="grid grid-col-1">
+                            <div class="grid-item">
+                                <div class="grid-item-inside">
+                                    <h3 class="grid-item-title line-left">Tiempo de respuesta medio (ms)</h3>
+
+                                    <canvas id="chart-performance-test-medium" style="padding: 30px;"></canvas>
+                                    <h3 class="grid-item-title line-left">Detalle</h3>
+
+                                    <pre>
+                                            <code class="language-javascript">
+# Go
+
+Mean response/sec: 24.37
+Response time (msec):
+  min: 53
+  max: 262
+  median: 85
+  p95: 112
+  p99: 137.9
+
+# Kotlin
+
+Mean response/sec: 24.32
+Response time (msec):
+  min: 11
+  max: 59
+  median: 13
+  p95: 38
+  p99: 43
+
+# Node.js
+
+Mean response/sec: 24.39
+Response time (msec):
+  min: 11
+  max: 50
+  median: 14
+  p95: 40
+  p99: 46
+
+# Python
+
+Mean response/sec: 22.25
+Response time (msec):
+  min: 28
+  max: 9981
+  median: 2669.5
+  p95: 9433.5
+  p99: 9790.4
+  Codes:
+      200: 1116
+  Errors:
+      ETIMEDOUT: 1346
+                                            </code>
+                                        </pre>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- PERFORMANCE: CARGA SUSTANCIAL -->
+
+            <section id="cta" class="block block-cta outer">
+                <div class="inner">
+                    <div class="has-gradient">
+                        <div class="grid grid-middle grid-center">
+                            <div class="grid-item block-header" style="text-align: center;">
+                                <h2 class="block-title">Prueba con carga sustancial</h2>
+                                <p class="block-subtitle">
+                                    Paso 1: <b>20</b> segs, <b>10</b> peticiones/seg<br>
+                                    Paso 2: <b>30</b> segs, <b>10 hasta 30</b> peticiones/seg<br>
+                                    Paso 3: <b>60</b> segs, <b>60</b> peticiones/seg<br>
+                                    Total: <b>110</b> segs, <b>40</b> peticiones/seg (4410 peticiones aprox.)
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="block-buttons" style="max-width: 100%;">
+                        <a class="button" onclick="hiddeShow('performance-test-high')">Ver
+                            información</a>
+                    </div>
+                </div>
+            </section>
+
+            <section id="performance-test-high" class="block-cta outer" style="display: none;">
+                <div class="inner">
+                    <div class="block-content">
+                        <div class="grid grid-col-1">
+                            <div class="grid-item">
+                                <div class="grid-item-inside">
+                                    <h3 class="grid-item-title line-left">Tiempo de respuesta medio (ms)</h3>
+
+                                    <canvas id="chart-performance-test-high" style="padding: 30px;"></canvas>
+                                    <h3 class="grid-item-title line-left">Detalle</h3>
+
+                                    <pre>
+                                                        <code class="language-javascript">
+# Go
+
+Mean response/sec: 37.81
+Response time (msec):
+  min: 53
+  max: 9991
+  median: 1662
+  p95: 7787.1
+  p99: 9336.6
+Codes:
+  200: 4109
+Errors:
+  ETIMEDOUT: 297
+
+# Kotlin
+
+Mean response/sec: 39.89
+Response time (msec):
+  min: 11
+  max: 69
+  median: 12
+  p95: 33
+  p99: 41
+
+# Node.js
+
+Mean response/sec: 39.93
+Response time (msec):
+  min: 11
+  max: 62
+  median: 13
+  p95: 35
+  p99: 44
+
+# Python
+
+Mean response/sec: 36.55
+Response time (msec):
+  min: 29
+  max: 9983
+  median: 0
+  p95: 8436.5
+  p99: 9550.6
+Codes:
+  200: 1128
+Errors:
+  ETIMEDOUT: 3258
+          
+                                                        </code>
+                                                    </pre>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
         </main>
 
@@ -440,6 +706,14 @@
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
     <script>
+        const colors = {
+            c: 'gray',
+            go: '#00ACD7',
+            kotlin: '#F08120',
+            nodejs: '#4CAF50',
+            python: '#FFCA1D',
+            'python (x10)': '#FFCA1D'
+        }
         function hiddeShow(id) {
             var x = document.getElementById(id);
             if (x.style.display === 'none') {
@@ -456,7 +730,7 @@
                     labels,
                     datasets:
                         Object.keys(data).map(label => ({
-                            label, data: [data[label]], borderWidth: 1
+                            label, data: data[label], borderWidth: 1, backgroundColor: colors[label]
                         }))
                 },
                 options: {
@@ -466,44 +740,30 @@
             });
         }
 
-        createBarChart('chart-times', ['1000 elementos'], {
-            c: 0.008,
-            go: 0.010,
-            kotlin: 0.209,
-            nodejs: 0.065,
-            python: 0.141
+        createBarChart('chart-performance-test-low', ['Paso 1: 20 segs, 5 peticiones/seg, total = 100 peticiones'], {
+            go: [93],
+            kotlin: [32],
+            nodejs: [42],
+            python: [50]
         });
 
-        createBarChart('chart-times-10000', ['10000 elementos'], {
-            c: 0.266,
-            go: 0.153,
-            kotlin: 0.406,
-            nodejs: 0.351,
-            python: 10.583
+        createBarChart('chart-performance-test-medium', [
+            'Total: 100 segs, 24.6 peticiones/seg (2460 peticiones aprox.)'
+        ], {
+            go: [85],
+            kotlin: [13],
+            nodejs: [14],
+            'python (x10)': [266]
         });
 
-        createBarChart('chart-times-50000', ['50000 elementos'], {
-            c: 6.736,
-            go: 3.983,
-            kotlin: 5.210,
-            nodejs: 8.218,
-            'python (x10)': 29.2435
-        });
 
-        createBarChart('chart-memory', ['MBs'], {
-            c: 3,
-            go: 4,
-            kotlin: 49,
-            nodejs: 42,
-            python: 10
-        });
-
-        createBarChart('chart-docker', ['MBs'], {
-            c: 7.09,
-            go: 20,
-            kotlin: 216,
-            nodejs: 58.1,
-            python: 58.8
+        createBarChart('chart-performance-test-high', [
+            'Total: 110 segs, 40 peticiones/seg (4410 peticiones aprox.)'
+        ], {
+            go: [1662],
+            kotlin: [12],
+            nodejs: [13],
+            python: [0]
         });
 
     </script>

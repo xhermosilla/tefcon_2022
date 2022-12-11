@@ -1,303 +1,266 @@
 {
   "aggregate": {
-    "counters": {
-      "vusers.created_by_name.Search words 'of'": 47,
-      "vusers.created": 100,
-      "http.requests": 100,
-      "http.codes.200": 100,
-      "http.responses": 100,
-      "vusers.failed": 0,
-      "vusers.completed": 100,
-      "vusers.created_by_name.Search words 'Bilbo'": 53
+    "timestamp": "2022-12-10T10:49:38.144Z",
+    "scenariosCreated": 100,
+    "scenariosCompleted": 100,
+    "requestsCompleted": 100,
+    "latency": {
+      "min": 61,
+      "max": 119,
+      "median": 93,
+      "p95": 114,
+      "p99": 118.5
     },
-    "rates": {
-      "http.request_rate": 5
+    "rps": {
+      "count": 100,
+      "mean": 4.93
     },
-    "firstCounterAt": 1670608772550,
-    "firstHistogramAt": 1670608772688,
-    "lastCounterAt": 1670608791817,
-    "lastHistogramAt": 1670608791817,
-    "firstMetricAt": 1670608772550,
-    "lastMetricAt": 1670608791817,
-    "period": 1670608790000,
-    "summaries": {
-      "http.response_time": {
-        "min": 59,
-        "max": 177,
-        "count": 100,
-        "p50": 76,
-        "median": 76,
-        "p75": 92.8,
-        "p90": 106.7,
-        "p95": 117.9,
-        "p99": 149.9,
-        "p999": 149.9
-      },
-      "vusers.session_length": {
-        "min": 61.2,
-        "max": 182.2,
-        "count": 100,
-        "p50": 80.6,
-        "median": 80.6,
-        "p75": 100.5,
-        "p90": 113.3,
-        "p95": 127.8,
-        "p99": 156,
-        "p999": 156
+    "scenarioDuration": {
+      "min": 62.3,
+      "max": 123.2,
+      "median": 97.7,
+      "p95": 118.4,
+      "p99": 122.8
+    },
+    "scenarioCounts": {
+      "Search words 'Bilbo'": 46,
+      "Search words 'of'": 54
+    },
+    "errors": {},
+    "codes": {
+      "200": 100
+    },
+    "matches": 0,
+    "customStats": {},
+    "counters": {},
+    "scenariosAvoided": 0,
+    "phases": [
+      {
+        "duration": 20,
+        "arrivalRate": 5,
+        "name": "Warm up low load"
       }
-    },
-    "histograms": {
-      "http.response_time": {
-        "min": 59,
-        "max": 177,
-        "count": 100,
-        "p50": 76,
-        "median": 76,
-        "p75": 92.8,
-        "p90": 106.7,
-        "p95": 117.9,
-        "p99": 149.9,
-        "p999": 149.9
-      },
-      "vusers.session_length": {
-        "min": 61.2,
-        "max": 182.2,
-        "count": 100,
-        "p50": 80.6,
-        "median": 80.6,
-        "p75": 100.5,
-        "p90": 113.3,
-        "p95": 127.8,
-        "p99": 156,
-        "p999": 156
-      }
-    }
+    ]
   },
   "intermediate": [
     {
-      "counters": {
-        "vusers.created_by_name.Search words 'of'": 20,
-        "vusers.created": 40,
-        "http.requests": 40,
-        "http.codes.200": 40,
-        "http.responses": 40,
-        "vusers.failed": 0,
-        "vusers.completed": 40,
-        "vusers.created_by_name.Search words 'Bilbo'": 20
+      "timestamp": "2022-12-10T10:49:27.635Z",
+      "scenariosCreated": 49,
+      "scenariosCompleted": 49,
+      "requestsCompleted": 49,
+      "latency": {
+        "min": 62,
+        "max": 119,
+        "median": 94,
+        "p95": 114.1,
+        "p99": 119
       },
-      "rates": {
-        "http.request_rate": 5
+      "rps": {
+        "count": 49,
+        "mean": 5.01
       },
-      "http.request_rate": null,
-      "firstCounterAt": 1670608772550,
-      "firstHistogramAt": 1670608772688,
-      "lastCounterAt": 1670608779816,
-      "lastHistogramAt": 1670608779816,
-      "firstMetricAt": 1670608772550,
-      "lastMetricAt": 1670608779816,
-      "period": "1670608770000",
-      "summaries": {
-        "http.response_time": {
-          "min": 61,
-          "max": 177,
-          "count": 40,
-          "p50": 77.5,
-          "median": 77.5,
-          "p75": 96.6,
-          "p90": 106.7,
-          "p95": 117.9,
-          "p99": 149.9,
-          "p999": 149.9
-        },
-        "vusers.session_length": {
-          "min": 64.2,
-          "max": 182.2,
-          "count": 40,
-          "p50": 83.9,
-          "median": 83.9,
-          "p75": 100.5,
-          "p90": 122.7,
-          "p95": 144,
-          "p99": 156,
-          "p999": 156
-        }
+      "scenarioDuration": {
+        "min": 66.5,
+        "max": 123.2,
+        "median": 98.7,
+        "p95": 119,
+        "p99": 123.2
       },
-      "histograms": {
-        "http.response_time": {
-          "min": 61,
-          "max": 177,
-          "count": 40,
-          "p50": 77.5,
-          "median": 77.5,
-          "p75": 96.6,
-          "p90": 106.7,
-          "p95": 117.9,
-          "p99": 149.9,
-          "p999": 149.9
-        },
-        "vusers.session_length": {
-          "min": 64.2,
-          "max": 182.2,
-          "count": 40,
-          "p50": 83.9,
-          "median": 83.9,
-          "p75": 100.5,
-          "p90": 122.7,
-          "p95": 144,
-          "p99": 156,
-          "p999": 156
-        }
-      }
+      "scenarioCounts": {
+        "Search words 'Bilbo'": 20,
+        "Search words 'of'": 29
+      },
+      "errors": {},
+      "codes": {
+        "200": 49
+      },
+      "matches": 0,
+      "latencies": [
+        62000000,
+        83000000,
+        74000000,
+        72000000,
+        101000000,
+        80000000,
+        89000000,
+        103000000,
+        98000000,
+        111000000,
+        87000000,
+        76000000,
+        65000000,
+        71000000,
+        116000000,
+        85000000,
+        93000000,
+        104000000,
+        93000000,
+        94000000,
+        94000000,
+        109000000,
+        93000000,
+        83000000,
+        104000000,
+        101000000,
+        113000000,
+        102000000,
+        92000000,
+        106000000,
+        77000000,
+        93000000,
+        95000000,
+        89000000,
+        105000000,
+        96000000,
+        71000000,
+        114000000,
+        88000000,
+        98000000,
+        114000000,
+        85000000,
+        95000000,
+        98000000,
+        119000000,
+        107000000,
+        103000000,
+        89000000,
+        93000000
+      ],
+      "customStats": {},
+      "counters": {},
+      "concurrency": 0,
+      "pendingRequests": 0,
+      "scenariosAvoided": 0
     },
     {
-      "counters": {
-        "vusers.created_by_name.Search words 'Bilbo'": 27,
-        "vusers.created": 50,
-        "http.requests": 50,
-        "http.codes.200": 50,
-        "http.responses": 50,
-        "vusers.failed": 0,
-        "vusers.completed": 50,
-        "vusers.created_by_name.Search words 'of'": 23
+      "timestamp": "2022-12-10T10:49:37.627Z",
+      "scenariosCreated": 50,
+      "scenariosCompleted": 50,
+      "requestsCompleted": 50,
+      "latency": {
+        "min": 61,
+        "max": 118,
+        "median": 93,
+        "p95": 111,
+        "p99": 118
       },
-      "rates": {
-        "http.request_rate": 5
+      "rps": {
+        "count": 50,
+        "mean": 5.01
       },
-      "http.request_rate": null,
-      "firstCounterAt": 1670608780549,
-      "firstHistogramAt": 1670608780627,
-      "lastCounterAt": 1670608789821,
-      "lastHistogramAt": 1670608789821,
-      "firstMetricAt": 1670608780549,
-      "lastMetricAt": 1670608789821,
-      "period": "1670608780000",
-      "summaries": {
-        "http.response_time": {
-          "min": 59,
-          "max": 127,
-          "count": 50,
-          "p50": 74.4,
-          "median": 74.4,
-          "p75": 87.4,
-          "p90": 104.6,
-          "p95": 108.9,
-          "p99": 122.7,
-          "p999": 122.7
-        },
-        "vusers.session_length": {
-          "min": 61.2,
-          "max": 131,
-          "count": 50,
-          "p50": 79.1,
-          "median": 79.1,
-          "p75": 94.6,
-          "p90": 111.1,
-          "p95": 113.3,
-          "p99": 127.8,
-          "p999": 127.8
-        }
+      "scenarioDuration": {
+        "min": 62.3,
+        "max": 122.5,
+        "median": 97.1,
+        "p95": 117.8,
+        "p99": 122.5
       },
-      "histograms": {
-        "http.response_time": {
-          "min": 59,
-          "max": 127,
-          "count": 50,
-          "p50": 74.4,
-          "median": 74.4,
-          "p75": 87.4,
-          "p90": 104.6,
-          "p95": 108.9,
-          "p99": 122.7,
-          "p999": 122.7
-        },
-        "vusers.session_length": {
-          "min": 61.2,
-          "max": 131,
-          "count": 50,
-          "p50": 79.1,
-          "median": 79.1,
-          "p75": 94.6,
-          "p90": 111.1,
-          "p95": 113.3,
-          "p99": 127.8,
-          "p999": 127.8
-        }
-      }
+      "scenarioCounts": {
+        "Search words 'Bilbo'": 25,
+        "Search words 'of'": 25
+      },
+      "errors": {},
+      "codes": {
+        "200": 50
+      },
+      "matches": 0,
+      "latencies": [
+        88000000,
+        94000000,
+        106000000,
+        92000000,
+        102000000,
+        111000000,
+        82000000,
+        89000000,
+        96000000,
+        72000000,
+        92000000,
+        92000000,
+        90000000,
+        68000000,
+        97000000,
+        94000000,
+        93000000,
+        93000000,
+        67000000,
+        94000000,
+        104000000,
+        84000000,
+        100000000,
+        111000000,
+        83000000,
+        96000000,
+        109000000,
+        90000000,
+        86000000,
+        93000000,
+        105000000,
+        90000000,
+        106000000,
+        102000000,
+        104000000,
+        98000000,
+        85000000,
+        71000000,
+        114000000,
+        90000000,
+        91000000,
+        80000000,
+        92000000,
+        118000000,
+        61000000,
+        103000000,
+        99000000,
+        102000000,
+        81000000,
+        78000000
+      ],
+      "customStats": {},
+      "counters": {},
+      "concurrency": 0,
+      "pendingRequests": 0,
+      "scenariosAvoided": 0
     },
     {
-      "counters": {
-        "vusers.created_by_name.Search words 'of'": 4,
-        "vusers.created": 10,
-        "http.requests": 10,
-        "http.codes.200": 10,
-        "http.responses": 10,
-        "vusers.failed": 0,
-        "vusers.completed": 10,
-        "vusers.created_by_name.Search words 'Bilbo'": 6
+      "timestamp": "2022-12-10T10:49:38.135Z",
+      "scenariosCreated": 1,
+      "scenariosCompleted": 1,
+      "requestsCompleted": 1,
+      "latency": {
+        "min": 97,
+        "max": 97,
+        "median": 97,
+        "p95": 97,
+        "p99": 97
       },
-      "rates": {
-        "http.request_rate": 10
+      "rps": {
+        "count": 1,
+        "mean": 2
       },
-      "http.request_rate": null,
-      "firstCounterAt": 1670608790548,
-      "firstHistogramAt": 1670608790642,
-      "lastCounterAt": 1670608791817,
-      "lastHistogramAt": 1670608791817,
-      "firstMetricAt": 1670608790548,
-      "lastMetricAt": 1670608791817,
-      "period": "1670608790000",
-      "summaries": {
-        "http.response_time": {
-          "min": 59,
-          "max": 138,
-          "count": 10,
-          "p50": 67.4,
-          "median": 67.4,
-          "p75": 70.1,
-          "p90": 104.6,
-          "p95": 104.6,
-          "p99": 104.6,
-          "p999": 104.6
-        },
-        "vusers.session_length": {
-          "min": 61.4,
-          "max": 147.2,
-          "count": 10,
-          "p50": 70.1,
-          "median": 70.1,
-          "p75": 71.5,
-          "p90": 108.9,
-          "p95": 108.9,
-          "p99": 108.9,
-          "p999": 108.9
-        }
+      "scenarioDuration": {
+        "min": 102.2,
+        "max": 102.2,
+        "median": 102.2,
+        "p95": 102.2,
+        "p99": 102.2
       },
-      "histograms": {
-        "http.response_time": {
-          "min": 59,
-          "max": 138,
-          "count": 10,
-          "p50": 67.4,
-          "median": 67.4,
-          "p75": 70.1,
-          "p90": 104.6,
-          "p95": 104.6,
-          "p99": 104.6,
-          "p999": 104.6
-        },
-        "vusers.session_length": {
-          "min": 61.4,
-          "max": 147.2,
-          "count": 10,
-          "p50": 70.1,
-          "median": 70.1,
-          "p75": 71.5,
-          "p90": 108.9,
-          "p95": 108.9,
-          "p99": 108.9,
-          "p999": 108.9
-        }
-      }
+      "scenarioCounts": {
+        "Search words 'Bilbo'": 1
+      },
+      "errors": {},
+      "codes": {
+        "200": 1
+      },
+      "matches": 0,
+      "latencies": [
+        97000000
+      ],
+      "customStats": {},
+      "counters": {},
+      "concurrency": 0,
+      "pendingRequests": 0,
+      "scenariosAvoided": 0
     }
   ]
 }

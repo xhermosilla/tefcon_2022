@@ -11,6 +11,9 @@
 
   <link rel="stylesheet" href="./public/css/tefcon.css">
 
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+    integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+
 </head>
 
 <body class="palette-blue">
@@ -65,7 +68,8 @@
               <# ¿Cómo se ha llevado a cabo? Entornos de desarrollo usados. #>
             </p>
             <p>
-              <# Tiempo en el desarrollo, impresiones, fácilidad de uso, herramientas para iniciar el proyecto, instalar librerías, etc #>
+              <# Tiempo en el desarrollo, impresiones, fácilidad de uso, herramientas para iniciar el proyecto, instalar
+                librerías, etc #>
             </p>
             <p>
               <# Pruebas de performance, tiempos inicio, total, memoria, tamaño imagenes docker, etc #>
@@ -74,6 +78,83 @@
         </div>
       </section>
 
+
+      <!-- PERFORMANCE BAJA CARGA -->
+
+      <section id="cta" class="block block-cta outer">
+        <div class="inner">
+          <div class="has-gradient">
+            <div class="grid grid-middle grid-center">
+              <div class="grid-item block-header" style="text-align: center;">
+                <h2 class="block-title">Prueba de performance (baja)</h2>
+                <p class="block-subtitle">
+                  1: 20 segs, 5 peticiones/seg, total = 100 peticiones
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="block-buttons" style="max-width: 100%;">
+            <a class="button" onclick="hiddeShow('performance-test-low')">Ver
+              información</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="performance-test-low" class="block-cta outer" style="display: none;">
+        <div class="inner">
+          <div class="block-content">
+            <div class="grid grid-col-1">
+              <div class="grid-item">
+                <div class="grid-item-inside">
+                  <h3 class="grid-item-title line-left">Ordenación de 1000 elementos (segundos)</h3>
+
+                  <canvas id="chart-times" style="padding: 30px;"></canvas>
+                  <h3 class="grid-item-title line-left">Detalle</h3>
+
+                  <pre>
+                                            <code class="language-javascript">
+    $ multitime -n 10 ./sort-c/bin/sort-c 1000
+    
+                Mean        Std.Dev.    Min         Median      Max
+    real        0.007       0.002       0.004       0.008       0.011       
+    user        0.005       0.003       0.000       0.004       0.011       
+    sys         0.002       0.002       0.000       0.003       0.004
+    
+    $ multitime -n 10 ./sort-go/bin/sort-go 1000
+    
+                Mean        Std.Dev.    Min         Median      Max
+    real        0.011       0.007       0.003       0.010       0.030       
+    user        0.006       0.003       0.000       0.007       0.011       
+    sys         0.004       0.003       0.000       0.005       0.007   
+    
+    $ multitime -n 10 kotlin -cp sort-kotlin/bin MainKt 1000
+    
+                Mean        Std.Dev.    Min         Median      Max
+    real        0.205       0.022       0.167       0.209       0.240       
+    user        0.144       0.011       0.122       0.144       0.157       
+    sys         0.058       0.010       0.041       0.057       0.077    
+    
+    $ multitime -n 10  node sort-nodejs/src/index.js 1000
+    
+    real        0.065       0.006       0.053       0.065       0.076       
+    user        0.049       0.007       0.033       0.049       0.059       
+    sys         0.016       0.005       0.008       0.017       0.025   
+    
+    $ multitime -n 10 python3 sort-python/src/main.py 1000
+    
+                Mean        Std.Dev.    Min         Median      Max
+    real        0.147       0.021       0.122       0.141       0.189       
+    user        0.136       0.020       0.114       0.129       0.176       
+    sys         0.010       0.006       0.000       0.010       0.024   
+                                            </code>
+                                        </pre>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
 
     </main>

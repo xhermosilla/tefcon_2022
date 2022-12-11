@@ -11,6 +11,9 @@
 
   <link rel="stylesheet" href="./public/css/tefcon.css">
 
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+    integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+
 </head>
 
 <body class="palette-blue">
@@ -48,7 +51,6 @@
               </ul>
             </div>
           </nav>
-
         </div>
       </div>
     </header>
@@ -67,9 +69,29 @@
             <p>
               <# Descripción de la charla #>
             </p>
-            <p>
-              <# Gráfico con el timeline de la charla #>
-            </p>
+
+            <!-- Time line -->
+
+            <div class="flex-parent">
+              <div class="input-flex-container">
+                <div class="input active">
+                  <span data-year="5m" data-info="Presentación"></span>
+                </div>
+                <div class="input">
+                  <span data-year="10m" data-info="Introducción"></span>
+                </div>
+                <div class="input">
+                  <span data-year="10m" data-info="Algoritmo de ordenación"></span>
+                </div>
+                <div class="input">
+                  <span data-year="10m" data-info="Servicio Rest"></span>
+                </div>
+                <div class="input">
+                  <span data-year="10m" data-info="Notas y conclusiones"></span>
+                </div>
+              </div>
+            </div>
+
           </div>
         </div>
       </section>
@@ -164,6 +186,22 @@
     </footer>
 
   </div>
+
+
+  <script>
+    $(function () {
+      var inputs = $('.input');
+      var paras = $('.description-flex-container').find('p');
+      inputs.click(function () {
+        var t = $(this),
+          ind = t.index(),
+          matchedPara = paras.eq(ind);
+
+        t.add(matchedPara).addClass('active');
+        inputs.not(t).add(paras.not(matchedPara)).removeClass('active');
+      });
+    });
+  </script>
 
 </body>
 

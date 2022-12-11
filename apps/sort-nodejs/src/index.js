@@ -5,19 +5,15 @@ function get_rand() {
     return seed;
 }
 
-function sort(array, size)
-{
+function sort(array, size) {
     let i;
     let j;
     let aux_elem;
     let iterations = 0;
 
-    for (i = 0; i < size - 1; i++)
-    {
-        for (j = 1; j < size; j++)
-        {
-            if (array[j] < array[j - 1])
-            {
+    for (i = 0; i < size - 1; i++) {
+        for (j = 1; j < size; j++) {
+            if (array[j] < array[j - 1]) {
                 aux_elem = array[j];
                 array[j] = array[j - 1];
                 array[j - 1] = aux_elem;
